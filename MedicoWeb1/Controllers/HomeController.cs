@@ -26,5 +26,17 @@ namespace MedicoWeb1.Controllers
 
             return View();
         }
+
+        public ActionResult Medecins()
+        {
+            return View();
+        }
+
+        public ActionResult Patients()
+        {
+            return View();
+        }
+
+        
     }
 }
