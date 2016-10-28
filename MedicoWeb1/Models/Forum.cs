@@ -5,7 +5,7 @@ using System.Web;
 
 namespace MedicoWeb1.Models
 {
-    public class Agenda
+    public class Forum
     {
     }
 }

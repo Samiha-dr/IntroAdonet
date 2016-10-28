@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MedicoWeb1.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -10,7 +11,9 @@ namespace MedicoWeb1.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            HoraireModel h = new HoraireModel();
+            List<HoraireModel> Lm = h.GetAll();
+            return View(Lm);
         }
 
         public ActionResult About()

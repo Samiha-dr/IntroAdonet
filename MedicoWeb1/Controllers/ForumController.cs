@@ -13,6 +13,9 @@ namespace MedicoWeb1.Controllers
         {
             return View();
         }
-
+        public ActionResult Forum()
+        {
+            return View();
+        }
     }
 }

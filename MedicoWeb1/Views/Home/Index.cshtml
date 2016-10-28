@@ -1,30 +1,69 @@
-﻿@{
-    ViewBag.Title = "Home Page";
+﻿@model IEnumerable<MedicoWeb1.Models.HoraireModel>
+
+@{
+    ViewBag.Title = "Index";
 }
 
-<div class="jumbotron">
-    <h1>Centre Medical</h1>
-    <p>Bienvenue sur Medico Web </p>
-   
+<h2>Index</h2>
 
-<div class="row">
-    <div class="col-md-4">
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.IdHoraire)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Jour)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DebMat)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FinMat)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DebAprem)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DebDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FinDate)
+        </th>
+        <th></th>
+    </tr>
 
-        <h2>prenez rendez-vous</h2>
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.IdHoraire)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Jour)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DebMat)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FinMat)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DebAprem)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DebDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FinDate)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
+}
 
-        <p><a class="btn btn-default" href="a "> Consultez l'agenda &raquo;</a></p>
-    </div>  
-        
-        
-    
-    <div class="col-md-4">
-        <h2>Forum</h2>
-        <p><a class="btn btn-default" href="">Posez vos questions &raquo;</a></p>
-    </div>  
-      
-    <div class="col-md-4">
-        <h2>Pharmacie </h2>
-        <p><a class="btn btn-default" href="">Faites vos courses &raquo;</a></p>
-    </div>
-</div>
-</div>
+</table>
