@@ -111,15 +111,14 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\PatientController.cs" />
     <Compile Include="Controllers\ConsultationController.cs" />
-    <Compile Include="Controllers\ForumController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PharmacieController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\HoraireModel.cs" />
-    <Compile Include="Models\Forum.cs" />
     <Compile Include="Models\Medecins.cs" />
     <Compile Include="Models\Patients.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -200,6 +199,7 @@
     <Content Include="Images\wallhaven-27263.jpg" />
     <Content Include="Images\wallhaven-3178-thumb.jpg" />
     <Content Include="Images\wallhaven-3178.jpg" />
+    <Content Include="MedicoDB.sql" />
     <Content Include="Scripts\app.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -241,8 +241,9 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Views\Consultation\Agenda.cshtml" />
     <Content Include="Views\Consultation\Index.cshtml" />
-    <Content Include="Views\Forum\Forum.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Patient\Index.cshtml" />
+    <Content Include="Views\Patient\Patients.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

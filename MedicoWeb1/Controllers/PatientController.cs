@@ -6,14 +6,14 @@ using System.Web.Mvc;
 
 namespace MedicoWeb1.Controllers
 {
-    public class ForumController : Controller
+    public class PatientController : Controller
     {
-        // GET: Forum
+        // GET: Client
         public ActionResult Index()
         {
             return View();
         }
-        public ActionResult Forum()
+        public ActionResult Patients()
         {
             return View();
         }
