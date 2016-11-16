@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MedicoWeb1.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -13,7 +14,8 @@ namespace MedicoWeb1.Controllers
         {
             return View();
         }
-        public ActionResult Patients()
+        [HttpPost]
+        public ActionResult Patients (Patients Cm)
         {
             return View();
         }

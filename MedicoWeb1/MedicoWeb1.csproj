@@ -119,6 +119,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\HoraireModel.cs" />
+    <Compile Include="Models\LoginModel.cs" />
     <Compile Include="Models\Medecins.cs" />
     <Compile Include="Models\Patients.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
