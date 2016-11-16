@@ -118,6 +118,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Infra\MesSessions.cs" />
     <Compile Include="Models\HoraireModel.cs" />
     <Compile Include="Models\LoginModel.cs" />
     <Compile Include="Models\Medecins.cs" />
